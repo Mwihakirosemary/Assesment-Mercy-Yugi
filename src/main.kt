@@ -75,16 +75,16 @@ fun newProduct(Product:product){
     var other= mutableListOf <product>()
 
     when(Product.category){
-        "groceries"->groceries.add(1,product)
-        "hygiene"->hygiene.add(1,product)
-        "other"->other.add(1,product)
+        "groceries"->groceries.add(1,Product)
+        "hygiene"->hygiene.add(1,Product)
+        "other"->other.add(1,Product)
     }
      println(listOf(Product))
 }
 //Write a function that given a string returns a string composed of only
 ////the characters in even indices. For example given “banana” it will return
 ////“bnn”
-fun evenIndex(words:String){
+fun evenIndex(words:String):String{
     var q=""
     words.forEachIndexed { index, h ->
         if (index % 2 == 0) {
